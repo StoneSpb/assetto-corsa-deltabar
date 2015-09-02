@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # PYRO_LOGFILE="{stderr}" PYRO_LOGLEVEL=DEBUG
 
@@ -13,7 +13,7 @@ Pyro4.config.PICKLE_PROTOCOL_VERSION = 3
 
 def main(args):
   #location = "localhost:9999"
-  location = "192.168.1.41:9999"
+  location = "192.168.1.2:9999"
   flame = Pyro4.core.Proxy("PYRO:%s@%s" % (Pyro4.constants.FLAME_NAME, location))
   #flame._pyroHmacKey = "FOO"
   flame._pyroBind()

@@ -68,7 +68,7 @@ def pyroserver():
     # FIXME: Listening on '' is not working here
     # it listens properly, but the Pyro client then reconnects to localhost
 #    daemon = Pyro4.core.Daemon(host='', port=9999)  # FIXME
-    daemon = Pyro4.core.Daemon(host='192.168.1.41', port=9999)
+    daemon = Pyro4.core.Daemon(host='192.168.1.2', port=9999)
     uri = Pyro4.utils.flame.start(daemon)
     ac.console('uri %s' % uri)
     daemon.requestLoop()
