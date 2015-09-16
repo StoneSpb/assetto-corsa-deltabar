@@ -1,2 +1,9 @@
 *.pyc
 .idea
+
+ac_values/*
+Chat/*
+gMeter/*
+RsrLiveTime/*
+splits/*
+system/*
